@@ -24,18 +24,3 @@ response = cw.get_metric_statistics(
             )
 print(response['Datapoints'][0]['Average'])
 
-
-"""
-
-response = cw.get_metric_statistics(
-            Period=300,
-            StartTime=datetime.datetime.utcnow() - datetime.timedelta(seconds=600),
-            EndTime=datetime.datetime.utcnow(),
-            MetricName='CPUUtilization',
-            Namespace='AWS/EC2',
-            Statistics=['Average'],
-            Dimensions=[{'Name':'InstanceId', 'Value':'i-04fe50529ae44b23a'}]
-            )
-print(response['Datapoints'][0]['Average'])
-
-"""
