@@ -1,0 +1,51 @@
+<html>
+  <head><style>
+   .layer1 {
+    font: 12pt sans-serif;  
+   } 
+   h1 {
+    font: 200% serif;
+   }
+  </style>
+  
+  </head><body id="com-atlassian-confluence" class="theme-default  aui-layout aui-theme-default synchrony-active" data-aui-version="7.6.3">
+   <div>
+      <table dir="ltr" width="600" border="5" summary="purpose/structure for speech output">
+   	<caption><h3>Monthly report of NC for {{ Month }} {{ Year }}</h3></caption>
+   	<colgroup width="80%"/>
+   	<colgroup id="colgroup" class="colgroup" align="center" valign="middle" title="title" width="1*" span="3" style="background:#ddd;"/>
+   	<thead>
+   		<tr>
+   			<th scope="col"/>
+   			<th scope="col">{{ Month }} {{ Year }}</th>
+   			
+   		</tr>
+   	</thead>
+
+   	<tbody>
+   		<tr>
+   			<td>Uptime for <b>VMware</b> from {{ time_from }} till {{ time_till }}</td>
+   			<th style="text-align:right">{{ uptime_VMware }}%
+   			
+   		</th></tr>
+   		<tr>
+   			<td>Uptime for <b>Network</b> from {{ time_from }} till {{ time_till }}</td>
+   			<th style="text-align:right">{{ uptime_Network }}%
+   			
+   		</th></tr>
+
+   		<tr>
+   			<td>Uptime for <b>namecheap.com https</b> {{ time_from }} till {{ time_till }}</td>
+   			<th style="text-align:right">{{ NC_uptime }}%
+   			
+   		</th></tr>
+   	</tbody>
+     </table>
+   </div>
+
+
+  </body>
+</html>
+
+
+ 
